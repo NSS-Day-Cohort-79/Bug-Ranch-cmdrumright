@@ -76,23 +76,23 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > `drovers` gets assigned an array of objects containing details of the drovers assigned to the trip.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > For each object in the `drovers` array, `drover` gets assigned a single object from the array.
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > <https://www.loom.com/share/f4ded9c1ce9d42e0b9c893509b94b80c>
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
-      journey.push("forest")
+     journey.push("forest");
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > Starting from 0 and incrementing by 1 each time, the for loop is going to push a "forest" string to the journey array for each number until it reaches areas.forests
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The database variable is an object with two keys. One key is "cattleTypes" which an array of objects detailing cattle types. And the other key is "drovers" which is an array of objects defining available drovers.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > It is defining a parameter that gets it's value from a variable passed in when the function is called.
 
 ## When You Are Done
 
